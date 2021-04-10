@@ -5,4 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - run: echo $GITHUB_EVENT_NAME
       - run: cat $GITHUB_EVENT_PATH
